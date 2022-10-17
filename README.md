@@ -13,9 +13,9 @@ Temos [uma aplicação full-stack](docker/todo-app) neste repositório: um **apl
 Foi criado as imagens para as aplicações e configuradas com o `docker-compose`. Para isto, utilizei uma série de comandos do `docker` com diferentes níveis de complexidade, cada comando foi escrito em seu próprio arquivo para serem avaliados pelos testes da Trybe.
 
 
-# Requisitos obrigatórios do projeto
+## Requisitos obrigatórios do projeto
 
-## Comandos docker
+### Comandos docker
 
 - [x] 1. Crie um container em modo interativo, sem rodá-lo, nomeando-o como `01container` e utilizando a imagem `alpine` na versão `3.12`
 
@@ -40,8 +40,8 @@ Foi criado as imagens para as aplicações e configuradas com o `docker-compose`
 
 - [x] 11. Gere uma build a partir do Dockerfile dos `testes` do `todo-app` nomeando a imagem para `todotests`
 
-# Requisito bônus do projeto
+## Requisito bônus do projeto
 
-## Docker-compose
+### Docker-compose
 
 - [x] 12. Suba uma orquestração em segundo plano com o docker-compose de forma que `backend`, `frontend` e `tests` consigam se comunicar
