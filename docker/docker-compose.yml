@@ -3,11 +3,10 @@ version: "3"
 services:
 
   todotests:
-   
     image: todotests
     restart: on-failure
     environment:
-      - DB_HOST=database
+      - FRONT_HOST: todofront
     depends_on:
       - "todofront"
       - "todoback"
@@ -18,7 +17,7 @@ services:
     ports:
       - 3000:3000
     environment:
-      - DB_HOST_BACK=todoback
+      - REACT_APP_API_HOST: todoback
     depends_on:
       - "todoback"
     
