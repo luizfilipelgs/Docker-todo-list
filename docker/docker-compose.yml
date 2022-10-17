@@ -4,7 +4,7 @@ services:
 
   todotests:
    
-    build: tests/
+    image: todotests
     restart: on-failure
     environment:
       - DB_HOST=database
@@ -12,8 +12,8 @@ services:
       - "todofront"
       - "todoback"
 
-  todofrontend:
-    build: frontend/
+  todofront:
+    image: todofrontend
     restart: on-failure
     ports:
       - 3000:3000
@@ -22,8 +22,8 @@ services:
     depends_on:
       - "todoback"
     
-  todobackend:
-    build: backend/
+  todoback:
+    image: todobackend
     restart: on-failure
     ports:
       - 3001:3001
